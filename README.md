@@ -7,12 +7,12 @@
 <p>
 <a href="data/README.md"><img alt="Explore the data" src="https://img.shields.io/badge/%E2%91%A0%20Explore%20the%20data-0b6e99?style=for-the-badge"></a>
 <a href="products/README.md"><img alt="Pick a mission" src="https://img.shields.io/badge/%E2%91%A1%20Pick%20a%20mission-7a3e9d?style=for-the-badge"></a>
-<a href="https://colab.research.google.com/github/disleveK/oncosys-hackathon-challenge/blob/main/starter/tcga_starter.ipynb"><img alt="Run the starter" src="https://img.shields.io/badge/%E2%91%A2%20Run%20the%20starter-1a7f37?style=for-the-badge"></a>
+<a href="starter/tcga_starter.ipynb"><img alt="Get the starter notebook" src="https://img.shields.io/badge/%E2%91%A2%20Get%20the%20starter-1a7f37?style=for-the-badge"></a>
 </p>
 
 - **Explore the data:** seven data packs (tumor molecular data, tissue images, CT scans, cell lines, trial records) plus a 30-minute warm-up. The menu shows included starters, source downloads and viewer links.
 - **Pick a mission:** six featured products and optional custom builds, across two tracks.
-- **Run the starter:** in 15 minutes, download real tumor data, see how each join shrinks the cohort, and open a slide in your browser.
+- **Run the starter:** download the notebook, see how each join shrinks the cohort, and find a matching pathology slide. Opening the slide depends on the external IDC viewer.
 
 ## Pick a user, build one workflow
 | Track | What it does | Featured products |
@@ -51,22 +51,13 @@ Build a web app, an AI agent, a visual workflow, or a tool that plugs into a not
 | [`RULES.md`](RULES.md) · [`DATA_LICENSES.md`](DATA_LICENSES.md) | What's allowed, and how to credit the data |
 | [`SUBMISSION_CHECKLIST.md`](SUBMISSION_CHECKLIST.md) | What to check before the code freeze |
 
-## Run it on your computer
-```bash
-git clone https://github.com/disleveK/oncosys-hackathon-challenge.git
-```
-```bash
-cd oncosys-hackathon-challenge
-```
-```bash
-pip install -r requirements.txt
-```
-```bash
-python data/tcga-brca/fetch.py
-```
-```bash
-jupyter notebook starter/tcga_starter.ipynb
-```
+## Run the starter
+
+Use **Get the starter notebook** above and download the `.ipynb` file (on GitHub, use **Download raw file**). In Colab, choose **File → Upload notebook**; or open the downloaded file in a Python Jupyter environment with pandas and matplotlib. Run all cells.
+
+The notebook includes its pinned helpers and manifests. It fetches and verifies the research tables directly from UCSC Xena. You need internet access, but no GitHub checkout, GitHub token, or separate helper download after you have the notebook.
+
+Maintainers: if any of the bundled helpers or manifests change, run `python starter/build_portable.py` and commit the regenerated notebook with them. Check it with `python starter/build_portable.py --check`.
 
 ## Recommended tools
 Use any stack. Start with the smallest toolset that lets someone else rerun your work. No paid account, hosted app, or AI coding assistant is required.
