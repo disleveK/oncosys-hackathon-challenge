@@ -58,7 +58,7 @@ Checkpoints aren't part of the rubric, but Checkpoint 2 is the best way to find 
 | `starter/tcga_starter.ipynb` | The 15-minute starter |
 | `products/` | Six featured product briefs, practice inputs, and pitch-your-own ideas |
 | `data/` | Seven data packs: each with a README, sources and checksums, fetch script, and manifests |
-| `kickoff/` | Kickoff slides (PDF, and PPTX with speaker notes) |
+| `kickoff/` | Kickoff slides (PDF) |
 | `assets/` | The challenge page image |
 | `format/` | Shared findings format v0.2, validator and reference output |
 | `warmup/wisconsin/` | Optional 30-minute warm-up on a small dataset |
