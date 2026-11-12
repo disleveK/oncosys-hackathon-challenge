@@ -33,7 +33,7 @@ Unsealing takes about 10 to 20 seconds, mostly checking fingerprints and rebuild
 Use the file for your product. Pitch-your-own teams: judges will tell you which file to use, if any.
 
 ## Get ready this week
-1. **Pull the latest repo** (`git pull`). The sealed envelopes are in `envelopes/sealed/`, about a few MB in total.
+1. **Pull the latest repo** (`git pull`). The sealed envelopes are in `envelopes/sealed/`: all of them together are under 1 MB.
 2. **Install the requirements** (`pip install -r requirements.txt`). Unsealing uses `pandas` and `cryptography`, which Colab already has.
 3. **Fetch release A** (`python data/tcga-brca/fetch.py`). The envelope stores only what changed and rebuilds the rest from your release A, after checking its fingerprints.
 4. **Rehearse with the practice envelope.** Its code is public:
