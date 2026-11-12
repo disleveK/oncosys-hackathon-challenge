@@ -14,11 +14,11 @@ Opening envelope E07
   ✓ Envelope E07 opened
   ✓ All 5 release files match their fingerprints
 
-  Done in 2.1 s. Everything is in:  envelopes/opened/E07/
+  Done in 14.2 s. Everything is in:  envelopes/opened/E07/
   New release for your tool:   envelopes/opened/E07/release/
 ```
 
-Then run your tool on what's inside. Every team gets its own envelope, and a code opens only that envelope.
+Unsealing takes about 10 to 20 seconds, mostly checking fingerprints and rebuilding files. Then run your tool on what's inside. Every team gets its own envelope, and a code opens only that envelope.
 
 ## What's inside an envelope
 | Path | For | What it is |
@@ -40,7 +40,7 @@ Use the file for your product. Pitch-your-own teams: judges will tell you which 
    ```
    python envelopes/unseal.py practice orange meadow pilot lantern
    ```
-   It contains practice release B, without RNA. Point your tool at `envelopes/opened/practice/release/` and time the whole run: unseal, load, write your output. Aim for well under a minute.
+   It contains practice release B, without RNA. Point your tool at `envelopes/opened/practice/release/` and time the whole run: unseal, load, write your output. Unsealing takes 10 to 20 seconds, so aim for your tool to finish in under a minute after that.
 5. **Make your tool take a folder path** as input, so it works with any envelope.
 
 ## If something goes wrong on the day
